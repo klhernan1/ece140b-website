@@ -22,6 +22,10 @@ def kvp_page(req):
     return FileResponse("templates/kvp.html")
 
 
+def notes_page(req):
+    return FileResponse("templates/notes.html")
+
+
 def product_page(req):
     return FileResponse("templates/product.html")
 
@@ -56,6 +60,9 @@ if __name__ == '__main__':
 
         config.add_route('kvp', '/kvp')
         config.add_view(kvp_page, route_name='kvp', renderer='json')
+
+        config.add_route('notes', '/notes')
+        config.add_view(notes_page, route_name='notes', renderer='json')
 
         config.add_route('pivot', '/pivot')
         config.add_view(pivot_page, route_name='pivot')
