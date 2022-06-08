@@ -1,52 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Page Info -->
-    <title>Product description</title>
-    <meta name="author" content="Karen Hernandez">
-    <meta name="description" content="Individual Website ECE 140B">
+    <title>Banglet</title>
+    <meta name="author" content="Karen Hernandez" />
+    <meta name="description" content="Individual Website ECE 140B" />
 
-    <link rel="stylesheet" type="text/css" href="css/agile.css">
+    <link rel="stylesheet" type="text/css" href="css/agile.css" />
   </head>
 
   <body>
+    <section class="front-layer">
+      <div class="navbar">
+        <a href="./">Home</a>
 
-    <div class='hero'>
-      <h1> Banglet  </h1>
-      <h2> -  Product Page </h2>
-    </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Product Info
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./kvp">KVP</a>
+            <a href="./product">Product</a>
+          </div>
+        </div>
+        <div class="filler"></div>
+        <a href="./notes">Notes</a>
+      </div>
 
-    <section class='padding-responsive'>
-      <p> <a href="home.html" style="color:#7fa8ff; font-size: medium;">  Return to Main Page</a> </p>
-
-      <div class='separator'> Product Description </div>
-
-      <h3> What it does </h3>
-      <p> adfada </p>
-
-      <h3> How it works </h3>
-      <p> adfada </p>
-
-      <div class='separator'> Benefits </div>
-      <p></p>
-      <ul>
-        <li>  </li>
-        <li>  </li>
-      </ul>
-
-      <div class='separator'> Features </div>
-      <p></p>
-      <ul>
-        <li>  </li>
-        <li>  </li>
-      </ul>
-
+      <section class="padding-responsive">
+        <h3>Design and Architecture</h3>
+        <p>
+          For this website I use a simple web page with no dynamic interaction
+          as it won't be required at this time so html and server.py will
+          suffice, however if need be I will add a Javescript and even database
+          connection. So far this website is similar to Lab 2-3 of 140A.
+        </p>
+        <br />
+        <p>
+          I use html and css for front-end design and styling. and I use python
+          with pyramid for back-end. the addition of JS will be the pipieline
+          from front end to back end for dynamic interactiona nd incase there
+          was a need for existance of databse I will use MYSQL.
+        </p>
+        <br />
+        <p>
+          Currently I'm displaying the title in a hero element as shown in the
+          video. I added a nav bar for easier navigation, specially after
+          addition of other pages. I created a gradient back ground and my page
+          content lays on a display box on top. I also used flex to place my
+          intro in center format, with the addition of filler elements.
+        </p>
+        <br />
+      </section>
     </section>
-
   </body>
 </html>
