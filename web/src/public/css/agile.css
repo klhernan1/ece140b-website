@@ -248,6 +248,14 @@ table tr:nth-child(odd) {
   margin-left: 1rem;
 }
 
+.container {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+}
+
 /* -- GRID -- */
 .responsive_grid {
   display: grid;
