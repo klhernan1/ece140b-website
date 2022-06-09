@@ -256,6 +256,27 @@ table tr:nth-child(odd) {
 
 }
 
+div.linwid {
+  line-height=2rem;
+  padding-left: 1rem;
+  width: auto;
+  max-width: 1000px;
+}
+
+img.imageOnLeft {
+  float: left;
+  margin: 1rem;
+
+}
+
+.imgeInfo {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+  grid-auto-rows: minmax(100px, auto);
+}
+
 /* -- GRID -- */
 .responsive_grid {
   display: grid;
