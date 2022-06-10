@@ -6,12 +6,12 @@ import os
 from wsgiref.simple_server import make_server
 
 
-def benefits_page(req):
-    return FileResponse("templates/benefits.html")
-
-
 def costs_page(req):
     return FileResponse("templates/costs.html")
+
+
+def features_page(req):
+    return FileResponse("templates/features.html")
 
 
 def interaction_page(req):
@@ -45,14 +45,15 @@ def home_page(req):
 if __name__ == '__main__':
     with Configurator() as config:
 
-        config.add_route('benefits', '/benefits')
-        config.add_view(benefits_page, route_name='benefits')
-
         config.add_route('costs', '/costs')
         config.add_view(costs_page, route_name='costs')
 
         config.add_route('home', '/')
         config.add_view(home_page, route_name='home')
+
+        config.add_route('features', '/features')
+        config.add_view(features_page,
+                        route_name='features')
 
         config.add_route('interaction', '/interaction')
         config.add_view(interaction_page,
